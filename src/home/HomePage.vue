@@ -11,17 +11,7 @@
       <router-link to="/createCustomer" class="btn btn-link">Create Customer</router-link>
     <em v-if="customers.loading">Loading customers...</em>
     <span v-if="customers.error" class="text-danger">ERROR: {{customers.error}}</span>
-    <!-- <ul v-if="customers.items">
-            <li v-for="user in customers.items" :key="user.id">
-                {{user.firstName + ' ' + user.lastName}}
-                <span v-if="user.deleting"><em> - Deleting...</em></span>
-                <span v-else-if="user.deleteError" class="text-danger"> - ERROR: {{user.deleteError}}</span>
-                <span v-else> - <a @click="deleteUser(user.id)" class="text-danger">Delete</a></span>
-            </li>
-    </ul>-->
-    <em v-if="customers.loading">Loading customers...</em>
-    <span v-if="customers.error" class="text-danger">ERROR: {{customers.error}}</span>
-
+  
     <nav aria-label="Page navigation example" v-if="customers.totalCount">
       <ul class="pagination">
         <li
