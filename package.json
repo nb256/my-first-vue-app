@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --open"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "vee-validate": "^2.1.0-beta.6",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
